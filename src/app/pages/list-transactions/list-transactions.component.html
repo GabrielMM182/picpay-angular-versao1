@@ -1,3 +1,22 @@
 <p>list-transactions works!</p>
 
+<h1>Lista de Transactions</h1>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>value</th>
+    <th>payer</th>
+    <th>payee</th>
+    <th>createdAt</th>
+  </tr>
+  <tr *ngFor="let transaction of transactions">
+    <td>{{ transaction.id }}</td>
+    <td>{{ transaction.value }}</td>
+    <td>{{ transaction.payer }}</td>
+    <td>{{ transaction.payee }}</td>
+    <td>{{ transaction.createdAt }}</td>
+  </tr>
+</table>
+
+
 <router-outlet />
